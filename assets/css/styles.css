@@ -1,0 +1,16 @@
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0062cc;
+}
+
+.features-icons {
+  padding-bottom: 56px;
+  padding-top: 56px;
+  /*margin-left: 10rem;*/
+  /*margin-right: 10rem;*/
+}
+
