@@ -36,6 +36,7 @@
             <div class="row">
                 <div class="col-xl-9 position-relative mx-auto">
                     <h3 class="mb-5">If you came here looking for our website, please try <a href="https://benscentre.org">here</a>.<br>Otherwise, here are a list of links that our clientbase tend to use on a regular basis.</h3>
+                    <span id="ip-address"></span><!-- 157.231.33.18 -->
                 </div>
                 <div class="col-md-10 col-lg-8 col-xl-7 position-relative mx-auto">
                     <form>
@@ -396,6 +397,18 @@
     <script src="assets/js/jquery.min.js?h=6bcc3684f18aa21874fa709f122723cf"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js?h=2cf0875e1daf356bc4e64c053e7a4150"></script>
     <script src="assets/js/script.min.js?h=35a745003519d0480832903c736bc4ec"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("https://api.ipify.org/?format=json")
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("ip-address").textContent = data.ip;
+                })
+                .catch(error => {
+                    console.error("Error fetching IP address:", error);
+                });
+        });
+    </script>
 </body>
 
 </html>
