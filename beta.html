@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en-gb">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Ben's Centre</title>
+    <link rel="canonical" href="https://fronbow.github.io/benscentre/">
+    <meta property="og:url" content="https://fronbow.github.io/benscentre/">
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "Ben's Centre",
+            "url": "https://fronbow.github.io/benscentre/"
+        }
+    </script>
+    <link rel="icon" type="image/png" sizes="128x128" href="assets/img/logo-favicon-128.png?h=8d52ae33a252b40aeca9cdd8fcd7ce3f">
+    <link rel="icon" type="image/png" sizes="128x128" href="assets/img/logo-favicon-128.png?h=8d52ae33a252b40aeca9cdd8fcd7ce3f">
+    <link rel="icon" type="image/svg+xml" sizes="1587x1123" href="assets/img/BensLogo.svg?h=096545dd1e1380a4eed189fc7377ab48">
+    <link rel="icon" type="image/svg+xml" sizes="570x327" href="assets/img/Logo-master.svg?h=03683d4e633debbbc402e235f55b40f7">
+    <link rel="icon" type="image/png" sizes="570x327" href="assets/img/Logo.png?h=890fe0fb5a9f71441aaaf1ef38b42c32">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=19cc0087a6bc190b92918c5ea337ae90">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css?h=8c398b0f233f5b03278dc3f336fe836d">
+    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css?h=8c398b0f233f5b03278dc3f336fe836d">
+    <link rel="stylesheet" href="assets/css/styles.min.css?h=a84cf0fda24cee1a150768b355e5ec71">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="header navbar-fixed-top"></header>
+        <div class="filter-bar">
+            <button class="active filter-btn" data-filter="*">All</button>
+            <button class="filter-btn" data-filter=".social">Social</button>
+            <button class="filter-btn" data-filter=".portraits">Portraits</button>
+            <button class="filter-btn" data-filter=".urban">Urban</button>
+        </div>
+
+        <div class="grid">
+            <div class="grid-item social">
+                <div class="item-content">
+                    <div class="mb-5 mb-lg-0 mx-auto features-icons-item mb-lg-3">
+                        <div class="d-flex justify-content-center align-items-center align-content-center features-icons-icon">
+                            <a href="https://youtube.com"><i class="la la-youtube text-danger m-auto text-primary" data-bss-hover-animate="pulse"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item social">
+                <div class="mb-5 mb-lg-0 mx-auto features-icons-item mb-lg-3">
+                    <div class="d-flex justify-content-center align-items-center align-content-center features-icons-icon">
+                        <a href="https://facebook.com"><i class="la la-facebook-official m-auto text-primary" data-bss-hover-animate="pulse"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <footer class="bg-light footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-start h-100 my-auto">
+                    <p class="text-muted mb-4 mb-lg-0 small">© Ben's Centre 2022. All Rights Reserved.<br>[ IP address is <span id="ip-address"></span><!-- 157.231.33.18 --> ]</p>
+                </div>
+                <div class="col-lg-6 text-center text-lg-end h-100 my-auto">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="mailto:benscentre@hotmail.co.uk"><i class="fa fa-envelope-o fa-2x fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.facebook.com/bens.centre"><i class="fa fa-facebook fa-2x fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/BensCentre"><i class="fa fa-twitter fa-2x fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/benscentresheffield/"><i class="fa fa-instagram fa-2x fa-fw"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js?h=6bcc3684f18aa21874fa709f122723cf"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js?h=2cf0875e1daf356bc4e64c053e7a4150"></script>
+    <script src="assets/js/web-animations.min.js"></script>
+    <script src="assets/js/muuri.js"></script>
+    <script src="assets/js/script.min.js?h=35a745003519d0480832903c736bc4ec"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("https://api.ipify.org/?format=json")
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("ip-address").textContent = data.ip;
+                })
+                .catch(error => {
+                    console.error("Error fetching IP address:", error);
+                });
+        });
+
+        let grid = new Muuri('.grid');
+    </script>
+</body>
+</html>
