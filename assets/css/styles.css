@@ -38,6 +38,7 @@ a:hover {
 }
 .grid-item.muuri-item-hidden {
     z-index: 0;
+    display: none;
 }
 .item-content {
     position: relative;
