@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="assets/css/links-grid.css">
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <div class="links-grid">
         <div class="container">
             <header class="links-header navbar-fixed-top">
@@ -39,19 +39,19 @@
             </header>
 
             <div class="filter-bar">
-                <button class="active filter-btn" data-filter="*">All</button>
-                <button class="filter-btn" data-filter=".social">Social</button>
-                <button class="filter-btn" data-filter=".games">Online Games</button>
-                <button class="filter-btn" data-filter=".shopping">Online Shopping</button>
-                <button class="filter-btn" data-filter=".benefits">Benefits Advice</button>
-                <button class="filter-btn" data-filter=".housing">Housing</button>
-                <button class="filter-btn" data-filter=".health">Health &amp; Wellbeing</button>
-                <button class="filter-btn" data-filter=".phones">Mobile Phone Providers</button>
-                <button class="filter-btn" data-filter=".misc">Other Services</button>
+                <button class="active filter-btn" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="social">Social</button>
+                <button class="filter-btn" data-filter="games">Online Games</button>
+                <button class="filter-btn" data-filter="shopping">Online Shopping</button>
+                <button class="filter-btn" data-filter="benefits">Benefits Advice</button>
+                <button class="filter-btn" data-filter="housing">Housing</button>
+                <button class="filter-btn" data-filter="health">Health &amp; Wellbeing</button>
+                <button class="filter-btn" data-filter="phones">Mobile Phone Providers</button>
+                <button class="filter-btn" data-filter="misc">Other Services</button>
             </div>
 
             <div class="grid">
-                <div class="grid-item social">
+                <div class="grid-item" data-category="social">
                     <div class="item-content">
                         <a href="https://youtube.com">
                             <i class="la la-youtube text-danger m-auto text-primary la-5x" data-bss-hover-animate="pulse"></i>
@@ -59,7 +59,7 @@
                     </div>
                 </div>
 
-                <div class="grid-item social">
+                <div class="grid-item" data-category="social">
                     <div class="item-content">
                         <a href="https://facebook.com">
                             <i class="la la-facebook-official m-auto text-primary la-5x" data-bss-hover-animate="pulse"></i>
@@ -67,7 +67,7 @@
                     </div>
                 </div>
 
-                <div class="grid-item social">
+                <div class="grid-item" data-category="social">
                     <div class="item-content">
                         <div class="d-flex justify-content-center align-items-center align-content-center features-icons-icon">
                             <a href="https://google.co.uk"><i class="la la-google la-5x"></i></a></div>
@@ -75,7 +75,7 @@
                     </div>
                 </div>
 
-                <div class="grid-item social">
+                <div class="grid-item" data-category="social">
                     <div class="item-content">
                         <div class="mb-5 mb-lg-0 mx-auto features-icons-item mb-lg-3">
                             <div class="d-flex justify-content-center align-items-center align-content-center features-icons-icon">
@@ -91,7 +91,7 @@
                     </div>
                 </div>
 
-                <div class="grid-item social">
+                <div class="grid-item" data-category="social">
                     <div class="item-content">
                         <div class="mb-5 mb-lg-0 mx-auto features-icons-item mb-lg-3">
                             <div class="d-flex justify-content-center align-items-center align-content-center features-icons-icon">
@@ -106,7 +106,7 @@
                     </div>
                 </div>
 
-                <div class="grid-item social">
+                <div class="grid-item" data-category="social">
                     <div class="item-content">
                         <div class="mb-5 mb-lg-0 mx-auto features-icons-item mb-lg-3">
                             <div class="d-flex justify-content-center align-items-center align-content-center features-icons-icon">
@@ -120,7 +120,7 @@
                     </div>
                 </div>
 
-                <div class="grid-item games">
+                <div class="grid-item" data-category="games">
                     <div class="item-content">
                         <div class="col d-xxl-flex justify-content-xxl-center align-items-xxl-center">
                             <div class="mb-5 mb-lg-0 mx-auto features-icons-item mb-lg-3">
@@ -131,7 +131,7 @@
                     </div>
                 </div>
 
-                <div class="grid-item games">
+                <div class="grid-item" data-category="games">
                     <div class="item-content">
                         <div class="col d-xxl-flex justify-content-xxl-center align-items-xxl-center" style="padding-right: 0;">
                             <div class="mb-5 mb-lg-0 mx-auto features-icons-item mb-lg-3">
@@ -142,7 +142,7 @@
                     </div>
                 </div>
 
-                <div class="grid-item games">
+                <div class="grid-item" data-category="games">
                     <div class="item-content">
                         <div class="col d-xxl-flex justify-content-xxl-center align-items-xxl-center" style="padding-right: 0;">
                             <div class="mb-5 mb-lg-0 mx-auto features-icons-item mb-lg-3">
@@ -153,7 +153,7 @@
                     </div>
                 </div>
 
-                <div class="grid-item shopping">
+                <div class="grid-item" data-category="shopping">
                     <div class="item-content">
                         <div class="col d-xxl-flex justify-content-xxl-center align-items-xxl-center">
                             <div class="mb-5 mb-lg-0 mx-auto features-icons-item mb-lg-3">
@@ -166,7 +166,7 @@
                     </div>
                 </div>
 
-                <div class="grid-item shopping">
+                <div class="grid-item" data-category="shopping">
                     <div class="item-content">
                         <div class="col d-xxl-flex justify-content-xxl-center align-items-xxl-center" style="padding-right: 0;">
                             <div class="mb-5 mb-lg-0 mx-auto features-icons-item mb-lg-3">
@@ -181,7 +181,7 @@
                     </div>
                 </div>
 
-                <div class="grid-item shopping">
+                <div class="grid-item" data-category="shopping">
                     <div class="item-content">
                         <div class="col d-xxl-flex justify-content-xxl-center align-items-xxl-center" style="padding-right: 0;">
                             <div class="mb-5 mb-lg-0 mx-auto features-icons-item mb-lg-3">
@@ -197,11 +197,11 @@
                     </div>
                 </div>
 
-                <div class="grid-item shopping">
+                <div class="grid-item" data-category="shopping">
                     <div class="item-content">
                         <div>
                             <div><a href="https://www.temu.com/">
-                                <svg class="_1nkfa5vq" style="width:60px;height:60px" aria-label="temu"
+                                <svg class="_1nkfa5vq" style="width:100px;height:100px" aria-label="temu"
                                      xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" width="1em"
                                      height="1em" fill="#fb7701" stroke="none">
                                     <path d="M741.4 102.4c99.5 0 180.2 80.7 180.2 180.2l0 458.8c0 99.5-80.7 180.2-180.2 180.2l-458.8 0c-99.5 0-180.2-80.7-180.2-180.2l0-458.8c0-99.5 80.7-180.2 180.2-180.2l458.8 0z m63.1 423.8c-9.6 0-17.4 8-17.4 17.8l0 74.6c0 23.4-12.9 35.5-34.1 35.5-21.2 0-34.1-12.5-34.2-36.6l0-73.5c0-9.8-7.8-17.8-17.4-17.8-9.6 0-17.4 8-17.4 17.8l0 74.4c0 43.5 26 65.7 68.5 65.6 42.5 0 69.4-22 69.4-66.7l0-73.3c0-9.8-7.8-17.8-17.4-17.8z m-269.5 0l-10.8 0c-9.6 0-17.4 8-17.4 17.8l0 122.2c0 9.8 7.8 17.8 17.4 17.8 9.6 0 17.4-8 17.4-17.8l0-80.2 29.3 42.4c6.1 8.8 18.8 8.8 24.9 0l29.4-42.4 0 80.2c0 9.8 7.8 17.8 17.4 17.8 9.6 0 17.4-8 17.4-17.8l0-122.2c0-9.8-7.8-17.8-17.4-17.8l-10.8 0c-4.2 0-8.1 2.1-10.4 5.5l-38 58.5-38-58.5c-2.4-3.5-6.3-5.5-10.4-5.5z m-219.3 0l-101.7 0c-9.6 0-17.4 8-17.4 17.8 0 9.8 7.8 17.8 17.4 17.9l33.5 0 0 104.1c0 9.8 7.8 17.8 17.3 17.9 9.6 0 17.4-8 17.4-17.9l0-104.1 33.5 0c9.6 0 17.4-8 17.4-17.9 0-9.8-7.8-17.8-17.4-17.8z m150.4 0l-94.2 0c-9.6 0-17.4 8-17.4 17.8l0 122c0 9.8 7.8 17.8 17.4 17.9l94.2 0c9.6 0 17.4-8 17.4-17.9 0-9.8-7.8-17.8-17.4-17.8l-76.8 0 0-25.3 66.9 0c9.6 0 17.4-8 17.4-17.9 0-9.8-7.8-17.8-17.4-17.8l-66.9 0 0-25.3 76.8 0c9.6 0 17.4-8 17.4-17.9 0-9.8-7.8-17.8-17.4-17.8z m-174.4-130.8l-0.4-1.2-0.2-0.7c-1.8-8.6 2.8-15.4 5.5-18.5l0.7-0.7c13.7-18 2.2-34.3 2.2-34.3l-3.3 0-3.3 0.1c-13.5 0.9-22.8 6.9-28 15-6.1-9.3-17.5-15.9-34.7-15.1 0 0-11.5 16.3 2.2 34.3 2.5 2.7 8.5 10.3 6 19.9l-34.9 57.9c-2.8 4.7-1.6 10.8 2.8 13.9 9 6.5 27.2 15.4 58.6 15.5 31.4 0 49.5-9 58.5-15.5l1.4-1.1c3.3-3.3 4-8.6 1.4-12.8l-34.9-57.9 0.4 1.2z m117.6-28.3c-12-24.3-27.5-28.5-35.2-22.1-5.9 4.8-19.7 24.1-20.6 25.4-15.1 22-14.3 27.3 5.1 39.8 11 7 19.7-2 23.6-4.7-1.8 11.6-7.3 29.9-15.7 42.7-4.5-3.5-7.8-6.2-10-8.1-2.6-2.4-6.6-2.3-9.1 0.2-1.2 1.2-1.8 2.9-1.7 4.6 0.1 1.7 0.8 3.3 2 4.5 20.2 18.9 46.8 29.7 75 29.7 28.4 0 55.1-10.7 75.3-29.7 2.6-2.4 2.7-6.5 0.3-9-2.5-2.6-6.5-2.7-9.1-0.3-1.6 1.5-3.2 2.9-4.9 4.2l-8.8-20.2c-1.4-3.5-3-7.9-4.8-13.2 0.9-2.2 2.7-4.3 5.4-7.1 1.9-2 3.5-3.9 4.6-5.8 5.9-9.5 2.5-15.1 0.8-18.8-4.2-8.8-10.8-5.9-15.6-0.8-5.9 6.3-11.5 9.1-20.7 11.3-7.7 1.8-13.7 0.9-18.6-2.3-6.8-4.3-17.3-20.3-17.3-20.3z m219.8-24.8c-10 9.7-12.3 23.9-14.2 39l-0.9 7c-2.7 21.1-6.9 42.7-32.1 55.2-5.1 2.5-9.3-5.8-16-5.7-19.3 0.1-56 17.5-57.5 26.3-1.2 7.2 14.5 13 60.8 13 40.2 0 53.2-62.8 67.3-62.8 14.1 0 7.5 56.9 6 62.8l14.8 0c-1.3-5.9-2.2-23.8-2.2-49.1 0-25.2 4.4-30.9 8-49.9 3.1-16.6-20.9-31-34-35.8z m144.5 2.1l-41.3 0c-26.7 0-48.9 21.2-50.7 48.4l-3 43.8c-1.4 20.8 14.6 38.4 35 38.5l78.7 0c20.3 0 36.4-17.7 35-38.5l-3-43.8c-1.9-27.3-24-48.5-50.7-48.4z m-350.7 100.6c12.4 0 21.9 6.3 25.5 17.9-8.4 2.3-17 3.4-25.7 3.4-13 0-17.6-1.2-25.9-3.6 3.4-10.2 14.4-17.7 26.1-17.6z m311.3-64.3l0 1.2c0 10.6 8.4 19.2 18.8 19.2 10.3 0 18.7-8.6 18.7-19.2l0-1.2c0-4.7 16.6-4.7 16.6 0l0 1.2c0 20-15.9 36.2-35.3 36.2-19.5 0-35.3-16.2-35.4-36.2l0-1.2c0-4.7 16.6-4.7 16.6 0z"></path>
@@ -211,7 +211,7 @@
                     </div>
                 </div>
 
-                <div class="grid-item shopping">
+                <div class="grid-item" data-category="shopping">
                     <div class="item-content">
                         <div>
                             <div><a class="link-primary" href="https://www.shein.co.uk/">
@@ -233,7 +233,7 @@
                     </div>
                 </div>
 
-                <div class="grid-item benefits">
+                <div class="grid-item" data-category="benefits">
                     <div class="item-content">
                         <div class="mb-5 mb-lg-0 mx-auto features-icons-item mb-lg-3">
                             <div class="d-flex justify-content-center align-items-center align-content-center features-icons-icon">
@@ -244,7 +244,7 @@
                     </div>
                 </div>
 
-                <div class="grid-item benefits">
+                <div class="grid-item" data-category="benefits">
                     <div class="item-content">
                         <div class="mb-5 mb-lg-0 mx-auto features-icons-item mb-lg-3">
                             <div class="d-flex justify-content-center align-items-center align-content-center features-icons-icon">
@@ -255,7 +255,7 @@
                     </div>
                 </div>
 
-                <div class="grid-item benefits">
+                <div class="grid-item" data-category="benefits">
                     <div class="item-content">
                         <div class="mb-5 mb-lg-0 mx-auto features-icons-item mb-lg-3">
                             <div class="d-flex justify-content-center align-items-center align-content-center features-icons-icon">
@@ -266,7 +266,7 @@
                     </div>
                 </div>
 
-                <div class="grid-item housing">
+                <div class="grid-item" data-category="housing">
                     <div class="item-content">
                         <div class="d-flex justify-content-center align-items-center align-content-center features-icons-icon">
                             <a href="https://actionorg.uk/"><img
@@ -275,7 +275,7 @@
                     </div>
                 </div>
 
-                <div class="grid-item housing">
+                <div class="grid-item" data-category="housing">
                     <div class="item-content">
                         <div class="d-flex justify-content-center align-items-center align-content-center features-icons-icon">
                             <a href="https://www.syha.co.uk/"><img src="assets/img/SYHA.jpg?h=8ab5de3151849723e672c40c570e0439"
@@ -283,7 +283,7 @@
                     </div>
                 </div>
 
-                <div class="grid-item housing">
+                <div class="grid-item" data-category="housing">
                     <div class="item-content">
                         <div class="d-flex justify-content-center align-items-center align-content-center features-icons-icon">
                             <a href="https://www.shelter.org.uk/"><img
@@ -292,7 +292,7 @@
                     </div>
                 </div>
 
-                <div class="grid-item housing">
+                <div class="grid-item" data-category="housing">
                     <div class="item-content">
                         <div class="d-flex justify-content-center align-items-center align-content-center features-icons-icon">
                             <a href="https://nomadsheffield.co.uk/"><img
@@ -301,7 +301,7 @@
                     </div>
                 </div>
 
-                <div class="grid-item housing">
+                <div class="grid-item" data-category="housing">
                     <div class="item-content">
                         <div class="d-flex justify-content-center align-items-center align-content-center features-icons-icon">
                             <a href="https://www.waythrough.org.uk/find-support-near-me/the-greens-sheffield-recovery-focused-accommodation/"><img
@@ -312,7 +312,7 @@
                     </div>
                 </div>
 
-                <div class="grid-item housing">
+                <div class="grid-item" data-category="housing">
                     <div class="item-content">
                         <div class="col d-xxl-flex justify-content-xxl-center align-items-xxl-center">
                             <div class="d-flex justify-content-center align-items-center align-content-center features-icons-icon">
@@ -324,80 +324,80 @@
                     </div>
                 </div>
 
-                <div class="grid-item housing">
+                <div class="grid-item" data-category="housing">
                     <div class="item-content">
                         <div class="d-flex justify-content-center align-items-center align-content-center features-icons-icon"><a href="https://www.roundabouthomeless.org/"><img src="assets/img/roundabout.jpg?h=3ecfd61edf8f96dd3d566d384ddcd6da" height="72" alt="roundabout logo"></a></div>
                     </div>
                 </div>
 
-                <div class="grid-item housing">
+                <div class="grid-item" data-category="housing">
                     <div class="item-content">
                         <div class="d-flex justify-content-center align-items-center align-content-center features-icons-icon"><a href="https://www.guinnesspartnership.com/"><img src="assets/img/gp-logo.jpg?h=251a1550d69af554bcababddd316a18f" height="72" alt="Guinness Partnership logo"></a></div>
                     </div>
                 </div>
 
-                <div class="grid-item housing">
+                <div class="grid-item" data-category="housing">
                     <div class="item-content">
                         <div class="d-flex justify-content-center align-items-center align-content-center features-icons-icon"><a href="https://www.sheffieldpropertyshop.org.uk/"><img class="bg-dark" src="assets/img/SheffieldPropertyShopLogo.png?h=76cd2f5626918752249f4d459d3c9faa" width="224" height="72" alt="Sheffield Property Shop  logo"></a></div>
                     </div>
                 </div>
 
-                <div class="grid-item health">
+                <div class="grid-item" data-category="health">
                     <div class="item-content">
                         <a href="https://www.shipshape.org.uk/"><img src="assets/img/SS%20Logo.webp?h=da523381a4b47d382884e388951d32db" height="72" alt="shipshape logo"></a>
                     </div>
                 </div>
 
-                <div class="grid-item health">
+                <div class="grid-item" data-category="health">
                     <div class="item-content">
                         <a href="https://humankindcharity.org.uk/service/likewise/"><img src="assets/img/likewise_logo.png?h=8ced6f985d0a17d00836ed680390d4bc" height="72" alt="Likewise logo"></a>
                     </div>
                 </div>
 
-                <div class="grid-item health">
+                <div class="grid-item" data-category="health">
                     <div class="item-content">
                         <a href="https://www.wearewithyou.org.uk/"><img src="assets/img/withyou-brand-logo-blue.svg?h=08c000c71dd8f0cb459a73a332d9e9ca" height="72" alt="withyou logo"></a>
                     </div>
                 </div>
 
-                <div class="grid-item health">
+                <div class="grid-item" data-category="health">
                     <div class="item-content">
                         <a href="https://sheffieldflourish.co.uk/"><img class="d-xxl-flex" src="assets/img/flourish-logo-black.png?h=2ab104c5f67df71c0e73370239c860af" height="72" alt="sheffield flourish logo"></a>
                     </div>
                 </div>
 
-                <div class="grid-item health">
+                <div class="grid-item" data-category="health">
                     <div class="item-content">
                         <a href="https://www.sheffieldmentalhealth.co.uk/"><img src="assets/img/smhg-logo.png?h=e2557247e0ab3520a31828cef7f80268" height="72" alt="Sheffield mental health guide logo"></a>
                     </div>
                 </div>
 
-                <div class="grid-item health">
+                <div class="grid-item" data-category="health">
                     <div class="item-content">
                         <a href="https://andysmanclub.co.uk/find-your-nearest-group/"><img src="assets/img/amc-logo-export.png?h=f32e45bc1ba0e41201e05feae5b8f31b" height="72" alt="amc logo"></a>
                     <h3><a href="https://andysmanclub.co.uk/find-your-nearest-group/">Andy's Man Club</a></h3>
                     </div>
                 </div>
 
-                <div class="grid-item mobile">
+                <div class="grid-item" data-category="mobile">
                     <div class="item-content">
                         <a href="https://www.moneysupermarket.com/mobile-phones/sim-only/pay-as-you-go-sim/"><img src="assets/img/msm-1-white.svg?h=16b88e45ae92cb07f0974e7c0a889f47" height="36" alt="MSM logo" style="background: var(--bs-accordion-color);"></a>
                     </div>
                 </div>
 
-                <div class="grid-item mobile">
+                <div class="grid-item" data-category="mobile">
                     <div class="item-content">
                         <a href="https://www.giffgaff.com/"><img src="assets/img/giffgaff-logo-white.svg?h=996fa68cbe84ff906d3bd2e9d0a08d15" height="72" alt="giffgaff logo" style="background: var(--bs-accordion-color);"></a>
                     </div>
                 </div>
 
-                <div class="grid-item mobile">
+                <div class="grid-item" data-category="mobile">
                     <div class="item-content">
                         <a href="https://www.tescomobile.com/"><img src="assets/img/tescomobile-logo.svg?h=35447ebe9d19f404d123fcc16fd07305" height="72" alt="TESCO Mobile logo"></a>
                     </div>
                 </div>
 
-                <div class="grid-item mobile">
+                <div class="grid-item" data-category="mobile">
                     <div class="item-content">
                         <a href="https://www.moneysavingexpert.com/mobiles/best-pay-as-you-go-sim-cards/">
                             <svg width="403" height="38" viewBox="0 0 403 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.52 29V25.08H3.88L5.56 4.56H2.12V0.599998H11.36L17.68 16.64C18.16 18.04 18.36 19 18.36 19H18.44C18.44 19 18.64 18.04 19.16 16.64L25.44 0.599998H34.68V4.56H31.28L32.92 25.08H36.28V29H24.64V25.08H27.8L26.76 10.76C26.68 9.76 26.88 8.12 26.88 8.12H26.76C26.76 8.12 26.44 9.68 26.08 10.64L20.64 23.72H16.16L10.72 10.64C10.36 9.68 10.08 8.12 10.08 8.12H9.92C9.92 8.12 10.12 9.76 10.04 10.76L9 25.08H12.2V29H0.52ZM38.7584 18.8C38.7584 12.56 43.7584 8.12 49.9584 8.12C56.1984 8.12 61.1984 12.56 61.1984 18.8C61.1984 25.08 56.1984 29.48 49.9984 29.48C43.7584 29.48 38.7584 25.08 38.7584 18.8ZM43.9184 18.8C43.9184 22.6 46.6784 25.16 49.9984 25.16C53.2784 25.16 56.0384 22.6 56.0384 18.8C56.0384 15.04 53.2784 12.44 49.9984 12.44C46.6784 12.44 43.9184 15.04 43.9184 18.8ZM64.3947 29V25.2H67.3547V13.28C67.3547 12.72 67.0347 12.4 66.4747 12.4H64.1947V8.6H69.5547C71.3547 8.6 72.1947 9.44 72.1947 10.88V11.8C72.1947 12.24 72.1147 12.68 72.1147 12.68H72.1947C72.4347 12.04 74.5947 8.12 79.7147 8.12C84.0747 8.12 86.5547 10.48 86.5547 15.88V25.2H89.5147V29H81.5147V16.92C81.5147 14.44 80.8347 12.76 78.2747 12.76C74.5947 12.76 72.4347 16.28 72.4347 19.84V25.2H75.3547V29H64.3947ZM91.8453 18.8C91.8453 12.52 96.0853 8.12 102.205 8.12C108.085 8.12 111.285 12.4 111.285 17.8C111.285 18.4 111.165 19.52 111.165 19.52H97.0453C97.3653 23.28 100.085 25.2 103.165 25.2C106.485 25.2 109.085 23.04 109.085 23.04L111.045 26.64C111.045 26.64 107.925 29.48 102.805 29.48C96.0453 29.48 91.8453 24.6 91.8453 18.8ZM97.1653 16.52H106.045C105.965 13.72 104.245 12.04 102.085 12.04C99.4853 12.04 97.6453 13.84 97.1653 16.52ZM115.35 32.28C115.35 32.28 116.55 33.24 118.43 33.24C120.07 33.24 121.39 32.36 122.03 30.88L122.59 29.6L115.59 12.4H113.15V8.6H123.19V12.4H120.79L124.51 22.72C124.87 23.72 124.95 24.84 124.95 24.84H125.07C125.07 24.84 125.23 23.72 125.63 22.72L129.31 12.4H126.95V8.6H136.59V12.4H134.27L126.75 31.64C125.19 35.68 122.15 37.4 118.67 37.4C115.71 37.4 113.71 36 113.71 36L115.35 32.28ZM138.928 19.84H143.688V21.96C143.688 23.8 146.008 24.88 148.688 24.88C151.568 24.88 153.608 23.64 153.608 21.36C153.608 18.48 150.368 17.56 147.088 16.28C143.288 14.84 139.568 13.12 139.568 8.04C139.568 2.32 144.208 0.119998 149.088 0.119998C153.568 0.119998 158.088 1.84 158.088 5.12V8.84H153.328V6.92C153.328 5.48 151.208 4.72 149.088 4.72C146.768 4.72 144.848 5.68 144.848 7.84C144.848 10.44 147.488 11.36 150.448 12.48C154.688 14 158.928 15.68 158.928 21C158.928 26.8 154.048 29.48 148.688 29.48C143.968 29.48 138.928 27.36 138.928 23.08V19.84ZM161.917 23.28C161.917 17.04 170.117 16.4 173.397 16.4H174.677V15.72C174.677 13.12 173.037 12.2 170.917 12.2C167.877 12.2 165.157 14.16 165.157 14.16L163.277 10.64C163.277 10.64 166.437 8.12 171.357 8.12C176.837 8.12 179.757 10.96 179.757 16.16V24.32C179.757 24.92 180.077 25.2 180.637 25.2H182.477V29H177.677C175.797 29 175.077 28 175.077 26.84V26.6C175.077 25.96 175.197 25.56 175.197 25.56H175.117C175.117 25.56 173.397 29.48 168.677 29.48C165.197 29.48 161.917 27.44 161.917 23.28ZM167.037 22.88C167.037 24.4 168.117 25.68 169.997 25.68C172.757 25.68 174.717 22.72 174.717 20.16V19.48H173.877C171.877 19.48 167.037 19.8 167.037 22.88ZM183.306 12.4V8.6H193.106V12.4H190.826L194.346 22.48C194.746 23.52 194.866 24.72 194.866 24.72H194.986C194.986 24.72 195.106 23.52 195.466 22.48L199.026 12.4H196.706V8.6H206.506V12.4H204.066L197.826 29H191.986L185.786 12.4H183.306ZM211.651 5.12V0.599998H216.771V5.12H211.651ZM208.731 29V25.2H211.691V12.4H208.531V8.6H216.771V25.2H219.691V29H208.731ZM222.715 29V25.2H225.675V13.28C225.675 12.72 225.355 12.4 224.795 12.4H222.515V8.6H227.875C229.675 8.6 230.515 9.44 230.515 10.88V11.8C230.515 12.24 230.435 12.68 230.435 12.68H230.515C230.755 12.04 232.915 8.12 238.035 8.12C242.395 8.12 244.875 10.48 244.875 15.88V25.2H247.835V29H239.835V16.92C239.835 14.44 239.155 12.76 236.595 12.76C232.915 12.76 230.755 16.28 230.755 19.84V25.2H233.675V29H222.715ZM253.686 31.88C253.686 31.88 256.206 33.24 259.326 33.24C262.446 33.24 265.086 31.88 265.086 28.12V26.84C265.086 26.36 265.166 25.76 265.166 25.76H265.086C263.886 27.56 262.126 28.6 259.406 28.6C253.526 28.6 250.246 23.88 250.246 18.28C250.246 12.68 253.406 8.12 259.286 8.12C261.726 8.12 264.486 9.04 265.606 11.2H265.686C265.686 11.2 265.606 10.92 265.606 10.52C265.606 9.44 266.326 8.6 267.926 8.6H273.006V12.4H271.046C270.526 12.4 270.166 12.68 270.166 13.2V27.76C270.166 34.76 264.726 37.4 259.406 37.4C256.846 37.4 254.126 36.68 252.126 35.64L253.686 31.88ZM260.486 24.32C262.886 24.32 265.206 22.92 265.206 18.32C265.206 13.68 262.886 12.44 260.166 12.44C257.086 12.44 255.366 14.68 255.366 18.12C255.366 21.68 257.206 24.32 260.486 24.32ZM275.648 29V25.08H279.048V4.56H275.648V0.599998H296.728V7.92H292.248V4.8H284.288V12.6H293.648V16.8H284.288V24.8H292.848V21.6H297.328V29H275.648ZM300.794 29V25.2H303.714L308.194 18.6L303.994 12.4H300.874V8.6H307.154L310.314 13.76C310.714 14.44 311.074 15.2 311.074 15.2H311.154C311.154 15.2 311.514 14.44 311.954 13.76L315.154 8.6H320.994V12.4H318.154L313.954 18.48L318.594 25.2H321.074V29H315.434L311.834 23.28C311.394 22.64 311.034 21.84 311.034 21.84H310.954C310.954 21.84 310.634 22.6 310.194 23.32L306.674 29H300.794ZM323.876 33.2H326.836V13.28C326.836 12.72 326.516 12.4 325.956 12.4H323.676V8.6H328.916C330.796 8.6 331.436 9.48 331.436 10.52V10.64C331.436 11.12 331.396 11.56 331.396 11.56H331.476C331.476 11.56 333.236 8.12 338.036 8.12C343.556 8.12 347.076 12.48 347.076 18.8C347.076 25.28 343.116 29.48 337.756 29.48C333.716 29.48 331.876 26.6 331.876 26.6H331.796C331.796 26.6 331.916 27.32 331.916 28.36V33.2H334.876V37H323.876V33.2ZM331.756 18.92C331.756 22.08 333.516 25.2 336.836 25.2C339.636 25.2 341.956 22.92 341.956 18.88C341.956 15 339.876 12.48 336.876 12.48C334.236 12.48 331.756 14.4 331.756 18.92ZM349.931 18.8C349.931 12.52 354.171 8.12 360.291 8.12C366.171 8.12 369.371 12.4 369.371 17.8C369.371 18.4 369.251 19.52 369.251 19.52H355.131C355.451 23.28 358.171 25.2 361.251 25.2C364.571 25.2 367.171 23.04 367.171 23.04L369.131 26.64C369.131 26.64 366.011 29.48 360.891 29.48C354.131 29.48 349.931 24.6 349.931 18.8ZM355.251 16.52H364.131C364.051 13.72 362.331 12.04 360.171 12.04C357.571 12.04 355.731 13.84 355.251 16.52ZM372.676 29V25.2H375.636V13.28C375.636 12.72 375.316 12.4 374.756 12.4H372.476V8.6H377.796C379.596 8.6 380.516 9.36 380.516 11.08V12.28C380.516 13.04 380.436 13.56 380.436 13.56H380.516C381.436 10.64 383.876 8.32 386.996 8.32C387.476 8.32 387.916 8.4 387.916 8.4V13.4C387.916 13.4 387.396 13.32 386.676 13.32C382.556 13.32 380.716 16.92 380.716 20.76V25.2H383.636V29H372.676ZM392.568 21.52V12.4H389.448V8.6H392.728V3.04H397.648V8.6H402.288V12.4H397.648V21C397.648 24.48 400.288 24.96 401.728 24.96C402.288 24.96 402.648 24.92 402.648 24.92V29.08C402.648 29.08 402.008 29.2 401.088 29.2C398.208 29.2 392.568 28.36 392.568 21.52Z" fill="#D3222A"></path>
@@ -406,104 +406,104 @@
                     </div>
                 </div>
 
-                <div class="grid-item misc">
+                <div class="grid-item" data-category="misc">
                     <div class="item-content">
                         <a href="https://www.turning-point.co.uk/"><img src="assets/img/turning-point.jpg?h=ab879ec0a9bb578ad6ef4c3740a964ba" height="72" alt="Turning Point logo"></a>
                     </div>
                 </div>
 
-                <div class="grid-item misc">
+                <div class="grid-item" data-category="misc">
                     <div class="item-content">
                         <a href="https://www.swwop.org/"><img src="assets/img/swwop-logo.jpg?h=07dac077a7e2fa417b1d4b48e4a4a694" height="72" alt="swwop logo"></a>
                     </div>
                 </div>
 
-                <div class="grid-item misc">
+                <div class="grid-item" data-category="misc">
                     <div class="item-content">
                         <a href="https://thesundaycentre.org/"><img src="assets/img/Sunday-Centre-logo-300x279.jpg?h=5a26c975b60f2bdf4dc49fa7fe7e0d84" height="72" alt="Sunday Centre logo"></a>
                     </div>
                 </div>
 
-                <div class="grid-item misc">
+                <div class="grid-item" data-category="misc">
                     <div class="item-content">
                         <a href="https://www.emmaus-sheffield.org.uk/"><img src="assets/img/emmaus.jpg?h=4b9b3ff163be17bb1aea19ae55a091bd" height="72" alt="emmaus logo"></a>
                     </div>
                 </div>
 
-                <div class="grid-item misc">
+                <div class="grid-item" data-category="misc">
                     <div class="item-content">
                         <a href="https://www.stwilfridscentre.org/"><img src="assets/img/St-WILFRIDS-Centre-logo.jpg?h=5bdb583c92012de7d6d7edf397e296e4" height="72" alt="St. Wilfrid's logo"></a>
                     </div>
                 </div>
 
-                <div class="grid-item misc">
+                <div class="grid-item" data-category="misc">
                     <div class="item-content">
                         <a href="https://www.archerproject.org.uk/"><img src="assets/img/logo-archerproj.jpg?h=36ccd829be5d34fe66a3f423a490cb11" height="72" alt="Archer Project logo"></a>
                     </div>
                 </div>
 
-                <div class="grid-item misc">
+                <div class="grid-item" data-category="misc">
                     <div class="item-content">
                         <a href="https://project6.org.uk/sheffield/"><img src="assets/img/project6.jpg?h=2f37576eb75e49d6785242f06217a167" height="72" alt="project6 logo"></a>
                     </div>
                 </div>
 
-                <div class="grid-item misc">
+                <div class="grid-item" data-category="misc">
                     <div class="item-content">
                         <a href="https://sheffielddact.org.uk/"><img src="assets/img/sheffield-dact.jpg?h=7381cb16198e38b6b4ba438f4046220d" width="95" height="96" alt="DACT Logo"></a>
                     </div>
                 </div>
 
-                <div class="grid-item misc">
+                <div class="grid-item" data-category="misc">
                     <div class="item-content">
                         <a href="https://sysurvivalguide.co.uk/"><img src="assets/img/SYSurvivalGuide_LogoOnly_RGB-150x150.png?h=7511cc24e41a9d8e8e3c5800094aab17" width="80" height="80" alt="SYSurvival Guide Logo"></a>
                         <h3><a href="https://sysurvivalguide.co.uk/"><br><span style="font-weight: normal !important;">South Yorkshire's Homeless Survival Guide</span><br><br></a></h3>
                     </div>
                 </div>
 
-                <!--<div class="grid-item misc">
+                <!--<div class="grid-item" data-category="misc">
                     <div class="item-content">
                     </div>
                 </div>
 
-                <div class="grid-item misc">
+                <div class="grid-item" data-category="misc">
                     <div class="item-content">
                     </div>
                 </div>
 
-                <div class="grid-item misc">
+                <div class="grid-item" data-category="misc">
                     <div class="item-content">
                     </div>
                 </div>-->
             </div>
         </div>
+
+        <footer class="bg-light footer mt-auto">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-center text-lg-start h-100 my-auto">
+                        <p class="text-muted mb-4 mb-lg-0 small">© Ben's Centre 2022. All Rights Reserved.<br>[ IP address is
+                            <span id="ip-address"></span><!-- 157.231.33.18 --> ]</p>
+                    </div>
+                    <div class="col-lg-6 text-center text-lg-end h-100 my-auto">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item"><a href="mailto:benscentre@hotmail.co.uk"><i
+                                    class="fa fa-envelope-o fa-2x fa-fw"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.facebook.com/bens.centre"><i
+                                    class="fa fa-facebook fa-2x fa-fw"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/BensCentre"><i
+                                    class="fa fa-twitter fa-2x fa-fw"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/benscentresheffield/"><i
+                                    class="fa fa-instagram fa-2x fa-fw"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
 
 
-
-<footer class="bg-light footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 text-center text-lg-start h-100 my-auto">
-                <p class="text-muted mb-4 mb-lg-0 small">© Ben's Centre 2022. All Rights Reserved.<br>[ IP address is
-                    <span id="ip-address"></span><!-- 157.231.33.18 --> ]</p>
-            </div>
-            <div class="col-lg-6 text-center text-lg-end h-100 my-auto">
-                <ul class="list-inline mb-0">
-                    <li class="list-inline-item"><a href="mailto:benscentre@hotmail.co.uk"><i
-                            class="fa fa-envelope-o fa-2x fa-fw"></i></a></li>
-                    <li class="list-inline-item"><a href="https://www.facebook.com/bens.centre"><i
-                            class="fa fa-facebook fa-2x fa-fw"></i></a></li>
-                    <li class="list-inline-item"><a href="https://twitter.com/BensCentre"><i
-                            class="fa fa-twitter fa-2x fa-fw"></i></a></li>
-                    <li class="list-inline-item"><a href="https://www.instagram.com/benscentresheffield/"><i
-                            class="fa fa-instagram fa-2x fa-fw"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
 <script src="assets/js/jquery.min.js?h=6bcc3684f18aa21874fa709f122723cf"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js?h=2cf0875e1daf356bc4e64c053e7a4150"></script>
 <script src="assets/js/web-animations.min.js"></script>
