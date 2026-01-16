@@ -1,3 +1,41 @@
+// Wait for the DOM to be ready
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize the grid
+    const grid = new Muuri('.links-grid', {
+        items: ".grid-item",
+        layoutDuration: 400,
+        layoutEasing: "ease",
+        dragEnabled: true,
+    });
+
+    // Get filter elements
+    const filterButtons = document.querySelectorAll('.filter-bar button');
+    //const searchInput = document.getElementById('search-filter');
+
+    // Add event listeners for buttons
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const filterValue = button.getAttribute('data-filter');
+            // Call the Muuri filter method
+            grid.filter(item => {
+                const itemCategory = item.getElement().getAttribute('data-category');
+                return filterValue === 'all' || itemCategory === filterValue;
+            });
+        });
+    });
+
+    // Add event listener for the search input
+    /*searchInput.addEventListener('input', () => {
+        const searchValue = searchInput.value.toLowerCase();
+        grid.filter(item => {
+            const linkText = item.getElement().querySelector('a').textContent.toLowerCase();
+            return linkText.includes(searchValue);
+        });
+    });*/
+});
+
+
+/*
 document.addEventListener("DOMContentLoaded", function () {
     const container = document.querySelector(".links-grid");
     const grid = container.querySelector(".grid");
@@ -48,4 +86,4 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     });
-});
+});*/
