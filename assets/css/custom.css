@@ -1,0 +1,17 @@
+@media print {
+    .category {
+        text-align: right;
+    }
+    .category::before {
+        content: "[ ";
+    }
+    .category::after {
+        content: " ]";
+    }
+}
+
+@media screen {
+    .category {
+        display: none;
+    }
+}
