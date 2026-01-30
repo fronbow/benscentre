@@ -1,0 +1,196 @@
+.photo-grid {
+  --photo-grid-bg-primary: var(--bs-gray-100);
+  --photo-grid-bg-secondary: var(--bs-white);
+  --photo-grid-text-primary: var(--bs-gray-900);
+  --photo-grid-text-secondary: var(--bs-gray-600);
+  --photo-grid-accent: #4299e1;
+  --photo-grid-accent-hover: #3182ce;
+  --photo-grid-border-color: var(--bs-gray-300);
+  --photo-grid-shadow-sm: 0 2px 8px rgba(var(--bs-dark-rgb), 0.06);
+  --photo-grid-shadow-md: 0 4px 12px rgba(var(--bs-dark-rgb), 0.08);
+  --photo-grid-shadow-lg: 0 8px 24px rgba(var(--bs-dark-rgb), 0.12);
+  --photo-grid-border-radius: 6px;
+  --photo-grid-spacing-xs: 0.5rem;
+  --photo-grid-spacing-sm: 1rem;
+  --photo-grid-spacing-md: 1.5rem;
+  --photo-grid-spacing-lg: 2rem;
+  --photo-grid-spacing-xl: 3rem;
+  --photo-grid-max-width: 1200px;
+  --photo-grid-gap: 24px;
+}
+
+.photo-grid {
+  font-family: var(--bs-font-sans-serif);
+  background-color: var(--photo-grid-bg-primary);
+  min-height: 100vh;
+  padding: var(--photo-grid-spacing-lg) var(--photo-grid-spacing-sm);
+}
+
+@media (min-width: 768px) {
+  .photo-grid {
+    padding: var(--photo-grid-spacing-xl) var(--photo-grid-spacing-md);
+  }
+}
+
+.photo-grid .container {
+  max-width: var(--photo-grid-max-width);
+  margin: 0 auto;
+}
+
+.photo-grid .gallery-header {
+  text-align: center;
+  margin-bottom: var(--photo-grid-spacing-xl);
+}
+
+.photo-grid .gallery-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--photo-grid-text-primary);
+  margin-bottom: var(--photo-grid-spacing-xs);
+  letter-spacing: -0.5px;
+}
+
+@media (min-width: 768px) {
+  .photo-grid .gallery-title {
+    font-size: 2.5rem;
+  }
+}
+
+.photo-grid .gallery-subtitle {
+  font-size: 1.125rem;
+  color: var(--photo-grid-text-secondary);
+  margin: 0;
+}
+
+.photo-grid .filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--photo-grid-spacing-sm);
+  margin-bottom: var(--photo-grid-spacing-xl);
+}
+
+.photo-grid .filter-btn {
+  padding: 0.5rem 1.25rem;
+  border: 2px solid var(--photo-grid-border-color);
+  border-radius: 50px;
+  background-color: var(--photo-grid-bg-secondary);
+  color: var(--photo-grid-text-primary);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--photo-grid-shadow-sm);
+}
+
+.photo-grid .filter-btn:hover {
+  border-color: var(--photo-grid-accent);
+  color: var(--photo-grid-accent);
+  transform: translateY(-2px);
+  box-shadow: var(--photo-grid-shadow-md);
+}
+
+.photo-grid .filter-btn.active {
+  background-color: var(--photo-grid-accent);
+  border-color: var(--photo-grid-accent);
+  color: var(--bs-white);
+  box-shadow: var(--photo-grid-shadow-md);
+}
+
+.photo-grid .filter-btn.active:hover {
+  background-color: var(--photo-grid-accent-hover);
+  border-color: var(--photo-grid-accent-hover);
+  transform: translateY(-2px);
+}
+
+.photo-grid .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--photo-grid-gap);
+  margin-bottom: var(--photo-grid-spacing-lg);
+  transition: opacity 0.3s ease;
+}
+
+.photo-grid .grid.loading {
+  opacity: 0;
+}
+
+@media (min-width: 576px) {
+  .photo-grid .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .photo-grid .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo-grid .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.photo-grid .grid.muuri {
+  position: relative;
+  display: block;
+}
+
+.photo-grid .grid-item {
+  transition: all 0.4s ease;
+}
+
+.photo-grid .grid.muuri .grid-item {
+  position: absolute;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .photo-grid .grid.muuri .grid-item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .photo-grid .grid.muuri .grid-item {
+    width: 33.333%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo-grid .grid.muuri .grid-item {
+    width: 25%;
+  }
+}
+
+.photo-grid .item-content {
+  overflow: hidden;
+  border-radius: var(--photo-grid-border-radius);
+  background-color: var(--photo-grid-bg-secondary);
+  box-shadow: var(--photo-grid-shadow-sm);
+  transition: all 0.4s ease;
+}
+
+.photo-grid .grid.muuri .item-content {
+  margin: calc(var(--photo-grid-gap) / 2);
+}
+
+.photo-grid .grid-item:hover .item-content {
+  transform: translateY(-4px);
+  box-shadow: var(--photo-grid-shadow-lg);
+}
+
+.photo-grid .item-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.photo-grid .grid-item:hover .item-content img {
+  transform: scale(1.05);
+}
+
