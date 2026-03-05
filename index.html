@@ -15,6 +15,22 @@
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W749J37G');</script>
     <!-- End Google Tag Manager -->
+    <!-- capture outbound clicks -->
+    <script>
+        /**
+         * Function that captures a click on an outbound link in Analytics.
+         * This function takes a valid URL string as an argument, and uses that URL string
+         * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+         * using 'navigator.sendBeacon' in browser that support it.
+         */
+        var captureOutboundLink = function(url) {
+            ga('send', 'event', 'outbound', 'click', url, {
+                'transport': 'beacon',
+                'hitCallback': function(){document.location = url;}
+            });
+        }
+    </script>
+    <!-- /capture outbound clicks -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home - Ben's Centre Client Links</title>
@@ -65,327 +81,327 @@
         <div class="grid">
             <div class="grid-item social">
                 <div class="item-content">
-                    <a target="_blank" href="https://youtube.com"><img src="assets/img/youtube-logo-png-46018.png" title="YouTube" alt="YouTube logo"></a>
+                    <a target="_blank" href="https://youtube.com" onclick="captureOutboundLink('https://youtube.com'); return false;"><img src="assets/img/youtube-logo-png-46018.png" title="YouTube" alt="YouTube logo"></a>
                     <div class="category">Social Media</div>
                 </div>
             </div>
             <div class="grid-item social">
                 <div class="item-content">
-                    <a target="_blank" href="https://facebook.com"><img src="assets/img/facebook-icon-png-731.png" title="Facebook" alt="Facebook logo"></a>
+                    <a target="_blank" href="https://facebook.com" onclick="captureOutboundLink('https://facebook.com'); return false;"><img src="assets/img/facebook-icon-png-731.png" title="Facebook" alt="Facebook logo"></a>
                     <div class="category">Social Media</div>
                 </div>
             </div>
             <div class="grid-item social">
                 <div class="item-content">
-                    <a target="_blank" href="https://google.co.uk"><img src="assets/img/googlelogo_color_272x92dp.png" title="Google" alt="Google logo"></a>
+                    <a target="_blank" href="https://google.co.uk" onclick="captureOutboundLink('https://google.co.uk'); return false;"><img src="assets/img/googlelogo_color_272x92dp.png" title="Google" alt="Google logo"></a>
                     <div class="category">Social Media</div>
                 </div>
             </div>
             <div class="grid-item support">
                 <div class="item-content">
-                    <a target="_blank" href="https://www.benscentre.org"><img src="assets/img/Bens_Logo.webp" title="Ben's Centre for Vulnerable People" alt="Ben's Centre logo"></a>
+                    <a target="_blank" href="https://www.benscentre.org" onclick="captureOutboundLink('https://www.benscentre.org'); return false;"><img src="assets/img/Bens_Logo.webp" title="Ben's Centre for Vulnerable People" alt="Ben's Centre logo"></a>
                     <div class="category">Support Services</div>
                 </div>
             </div>
             <div class="grid-item other">
                 <div class="item-content">
-                    <a target="_blank" href="https://www.turning-point.co.uk"><img src="assets/img/turning-point.jpg" title="Turning Point" alt="Turning Point logo"></a>
+                    <a target="_blank" href="https://www.turning-point.co.uk" onclick="captureOutboundLink('https://www.turning-point.co.uk'); return false;"><img src="assets/img/turning-point.jpg" title="Turning Point" alt="Turning Point logo"></a>
                     <div class="category">Other Services</div>
                 </div>
             </div>
             <div class="grid-item other">
                 <div class="item-content">
-                    <a target="_blank" href="https://www.swwop.org"><img src="assets/img/swwop-logo.jpg" title="Sheffield Working Women's Opportunities Project" alt="SWWOP logo"></a>
+                    <a target="_blank" href="https://www.swwop.org" onclick="captureOutboundLink('https://www.swwop.org'); return false;"><img src="assets/img/swwop-logo.jpg" title="Sheffield Working Women's Opportunities Project" alt="SWWOP logo"></a>
                     <div class="category">Other Services</div>
                 </div>
             </div>
             <div class="grid-item support">
                 <div class="item-content">
-                    <a target="_blank" href="https://thesundaycentre.org"><img src="assets/img/Sunday-Centre-logo-300x279.jpg" title="The Sunday Centre" alt="Sunday Centre logo"></a>
+                    <a target="_blank" href="https://thesundaycentre.org" onclick="captureOutboundLink('https://thesundaycentre.org'); return false;"><img src="assets/img/Sunday-Centre-logo-300x279.jpg" title="The Sunday Centre" alt="Sunday Centre logo"></a>
                     <div class="category">Support Services</div>
                 </div>
             </div>
             <div class="grid-item other">
                 <div class="item-content">
-                    <a target="_blank" href="https://www.emmaus-sheffield.org.uk"><img src="assets/img/emmaus.jpg" title="emmaus" alt="emmaus logo"></a>
+                    <a target="_blank" href="https://www.emmaus-sheffield.org.uk" onclick="captureOutboundLink('https://www.emmaus-sheffield.org.uk'); return false;"><img src="assets/img/emmaus.jpg" title="emmaus" alt="emmaus logo"></a>
                     <div class="category">Other Services</div>
                 </div>
             </div>
             <div class="grid-item support">
                 <div class="item-content">
-                    <a target="_blank" href="https://www.stwilfridscentre.org"><img src="assets/img/St-WILFRIDS-Centre-logo.jpg" title="St Wilfrid's Centre" alt="St Wilfrid's Centre logo"></a>
+                    <a target="_blank" href="https://www.stwilfridscentre.org" onclick="captureOutboundLink('https://www.stwilfridscentre.org'); return false;"><img src="assets/img/St-WILFRIDS-Centre-logo.jpg" title="St Wilfrid's Centre" alt="St Wilfrid's Centre logo"></a>
                     <div class="category">Support Services</div>
                 </div>
             </div>
             <div class="grid-item support">
                 <div class="item-content">
-                    <a target="_blank" href="https://www.archerproject.org.uk"><img src="assets/img/logo-archerproj.jpg" title="Archer Project" alt="Archer Project logo"></a>
+                    <a target="_blank" href="https://www.archerproject.org.uk" onclick="captureOutboundLink('https://www.archerproject.org.uk'); return false;"><img src="assets/img/logo-archerproj.jpg" title="Archer Project" alt="Archer Project logo"></a>
                     <div class="category">Support Services</div>
                 </div>
             </div>
             <div class="grid-item social">
                 <div class="item-content">
-                    <a target="_blank" href="https://tiktok.com"><img src="assets/img/TikTok-Logo-PNG3.png" title="TikTok" alt="TikTok logo"></a>
+                    <a target="_blank" href="https://tiktok.com" onclick="captureOutboundLink('https://tiktok.com'); return false;"><img src="assets/img/TikTok-Logo-PNG3.png" title="TikTok" alt="TikTok logo"></a>
                     <div class="category">Social Media</div>
                 </div>
             </div>
             <div class="grid-item social">
                 <div class="item-content">
-                    <a target="_blank" href="https://instagram.com"><img src="assets/img/instagram-icon-971.jpg" title="Instagram" alt="Instagram logo"></a>
+                    <a target="_blank" href="https://instagram.com" onclick="captureOutboundLink('https://instagram.com'); return false;"><img src="assets/img/instagram-icon-971.jpg" title="Instagram" alt="Instagram logo"></a>
                     <div class="category">Social Media</div>
                 </div>
             </div>
             <div class="grid-item social">
                 <div class="item-content">
-                    <a target="_blank" href="https://x.com"><img src="assets/img/X-Logo-500x281.png" title="X (the new name for twitter)" alt="X logo"></a>
+                    <a target="_blank" href="https://x.com" onclick="captureOutboundLink('https://x.com'); return false;"><img src="assets/img/X-Logo-500x281.png" title="X (the new name for twitter)" alt="X logo"></a>
                     <div class="category">Social Media</div>
                 </div>
             </div>
             <div class="grid-item games">
                 <div class="item-content">
-                    <a target="_blank" href="https://play123.com"><img src="assets/img/Play123_idj_DW8wAF_0.png" title="play123" alt="play123 logo" style="background-color: #6ac9fc;"></a>
+                    <a target="_blank" href="https://play123.com" onclick="captureOutboundLink('https://play123.com'); return false;"><img src="assets/img/Play123_idj_DW8wAF_0.png" title="play123" alt="play123 logo" style="background-color: #6ac9fc;"></a>
                     <div class="category">Online Games</div>
                 </div>
             </div>
             <div class="grid-item games">
                 <div class="item-content">
-                    <a target="_blank" href="https://gamesgo.net"><img src="assets/img/gamesGO logo.svg" title="GamesGo" alt="GamesGo logo"><h5>GamesGO</h5></a>
+                    <a target="_blank" href="https://gamesgo.net" onclick="captureOutboundLink('https://gamesgo.net'); return false;"><img src="assets/img/gamesGO logo.svg" title="GamesGo" alt="GamesGo logo"><h5>GamesGO</h5></a>
                     <div class="category">Online Games</div>
                 </div>
             </div>
             <div class="grid-item games">
                 <div class="item-content">
-                    <a target="_blank" href="https://www.crazygames.com"><img src="assets/img/crazy games logo-ziggy.svg" title="Crazy Games" alt="Crazy Games logo"><img src="assets/img/crazy games logo-text.svg" title="Crazy Games" alt="Crazy Games logo"></a>
+                    <a target="_blank" href="https://www.crazygames.com" onclick="captureOutboundLink('https://www.crazygames.com'); return false;"><img src="assets/img/crazy games logo-ziggy.svg" title="Crazy Games" alt="Crazy Games logo"><img src="assets/img/crazy games logo-text.svg" title="Crazy Games" alt="Crazy Games logo"></a>
                     <div class="category">Online Games</div>
                 </div>
             </div>
             <div class="grid-item shopping">
                 <div class="item-content">
-                    <a target="_blank" href="https://ebay.co.uk"><img src="assets/img/ebay-logo.png" title="ebay" alt="ebay logo"></a>
+                    <a target="_blank" href="https://ebay.co.uk" onclick="captureOutboundLink('https://ebay.co.uk'); return false;"><img src="assets/img/ebay-logo.png" title="ebay" alt="ebay logo"></a>
                     <div class="category">Online Shopping</div>
                 </div>
             </div>
             <div class="grid-item shopping">
                 <div class="item-content">
-                    <a target="_blank" href="https://folksy.com"><img src="assets/img/folksy-logo.png" title="folksy" alt="folksy logo"></a>
+                    <a target="_blank" href="https://folksy.com" onclick="captureOutboundLink('https://folksy.com'); return false;"><img src="assets/img/folksy-logo.png" title="folksy" alt="folksy logo"></a>
                     <div class="category">Online Shopping</div>
                 </div>
             </div>
             <div class="grid-item shopping">
                 <div class="item-content">
-                    <a target="_blank" href="https://www.etsy.com/uk"><img src="assets/img/Etsy-Logo-500x281.png" title="Etsy" alt="Etsy logo"></a>
+                    <a target="_blank" href="https://www.etsy.com/uk" onclick="captureOutboundLink('https://www.etsy.com/uk'); return false;"><img src="assets/img/Etsy-Logo-500x281.png" title="Etsy" alt="Etsy logo"></a>
                     <div class="category">Online Shopping</div>
                 </div>
             </div>
             <div class="grid-item shopping">
                 <div class="item-content">
-                    <a target="_blank" href="https://www.temu.com"><img src="assets/img/Temu_logo_icon.svg.png" title="TEMU" alt="TEMU logo"></a>
+                    <a target="_blank" href="https://www.temu.com" onclick="captureOutboundLink('https://www.temu.com'); return false;"><img src="assets/img/Temu_logo_icon.svg.png" title="TEMU" alt="TEMU logo"></a>
                     <div class="category">Online Shopping</div>
                 </div>
             </div>
             <div class="grid-item shopping">
                 <div class="item-content">
-                    <a target="_blank" href="https://www.shein.com"><img src="assets/img/Shein-Logo-500x281.png" title="SHEIN" alt="SHEIN logo"></a>
+                    <a target="_blank" href="https://www.shein.com" onclick="captureOutboundLink('https://www.shein.com'); return false;"><img src="assets/img/Shein-Logo-500x281.png" title="SHEIN" alt="SHEIN logo"></a>
                     <div class="category">Online Shopping</div>
                 </div>
             </div>
             <div class="grid-item benefits">
                 <div class="item-content">
-                    <a target="_blank" href="https://www.universal-credit.service.gov.uk"><img src="assets/img/crown.svg" title="Universal Credit" alt="Government Crown logo"><h5>Universal Credit</h5></a>
+                    <a target="_blank" href="https://www.universal-credit.service.gov.uk" onclick="captureOutboundLink('https://www.universal-credit.service.gov.uk'); return false;"><img src="assets/img/crown.svg" title="Universal Credit" alt="Government Crown logo"><h5>Universal Credit</h5></a>
                     <div class="category">Benefits Advice</div>
                 </div>
             </div>
             <div class="grid-item benefits">
                 <div class="item-content">
-                    <a target="_blank" href="https://www.gov.uk/pip"><img src="assets/img/crown.svg" title="PIP (Personal Independence Payment)" alt="Government Crown logo"><h5>PIP</h5></a>
+                    <a target="_blank" href="https://www.gov.uk/pip" onclick="captureOutboundLink('https://www.gov.uk/pip'); return false;"><img src="assets/img/crown.svg" title="PIP (Personal Independence Payment)" alt="Government Crown logo"><h5>PIP</h5></a>
                     <div class="category">Benefits Advice</div>
                 </div>
             </div>
             <div class="grid-item benefits">
                 <div class="item-content">
-                    <a target="_blank" href="https://citizensadvicesheffield.org.uk"><img src="assets/img/Citizens_Advice_Logo.png" title="Citizens Advice" alt="Citizens Advice logo"></a>
+                    <a target="_blank" href="https://citizensadvicesheffield.org.uk" onclick="captureOutboundLink('https://citizensadvicesheffield.org.uk'); return false;"><img src="assets/img/Citizens_Advice_Logo.png" title="Citizens Advice" alt="Citizens Advice logo"></a>
                     <div class="category">Benefits Advice</div>
                 </div>
             </div>
             <div class="grid-item housing">
                 <div class="item-content">
-                    <a target="_blank" href="https://actionorg.uk/"><img src="assets/img/ActionLogoLarge.jpg" title="Action Housing" alt="Action Housing logo"></a>
+                    <a target="_blank" href="https://actionorg.uk/" onclick="captureOutboundLink('https://actionorg.uk/'); return false;"><img src="assets/img/ActionLogoLarge.jpg" title="Action Housing" alt="Action Housing logo"></a>
                     <div class="category">Housing Advice</div>
                 </div>
             </div>
             <div class="grid-item housing">
                 <div class="item-content">
-                    <a target="_blank" href="https://homeless.org.uk/homeless-england/"><img src="assets/img/HomelessLink_logo.png" title="Homeless Link" alt="Homeless Link logo"></a>
+                    <a target="_blank" href="https://homeless.org.uk/homeless-england/" onclick="captureOutboundLink('https://homeless.org.uk/homeless-england/'); return false;"><img src="assets/img/HomelessLink_logo.png" title="Homeless Link" alt="Homeless Link logo"></a>
                     <div class="category">Housing Advice</div>
                 </div>
             </div>
             <div class="grid-item housing">
                 <div class="item-content">
-                    <a target="_blank" href="https://www.syha.co.uk/"><img src="assets/img/SYHA.jpg" title="South Yorkshire Housing Association" alt="South Yorkshire Housing Association logo"></a>
+                    <a target="_blank" href="https://www.syha.co.uk/" onclick="captureOutboundLink('https://www.syha.co.uk/'); return false;"><img src="assets/img/SYHA.jpg" title="South Yorkshire Housing Association" alt="South Yorkshire Housing Association logo"></a>
                     <div class="category">Housing Advice</div>
                 </div>
             </div>
             <div class="grid-item housing">
                 <div class="item-content">
-                    <a target="_blank" href="https://england.shelter.org.uk/"><img src="assets/img/shelter.jpg" title="Shelter" alt="Shelter logo"></a>
+                    <a target="_blank" href="https://england.shelter.org.uk/" onclick="captureOutboundLink('https://england.shelter.org.uk/'); return false;"><img src="assets/img/shelter.jpg" title="Shelter" alt="Shelter logo"></a>
                     <div class="category">Housing Advice</div>
                 </div>
             </div>
             <div class="grid-item housing">
                 <div class="item-content">
-                    <a target="_blank" href="https://nomadsheffield.co.uk"><img src="assets/img/Nomad-Sheffield-Logo-768x326.jpg" title="NOMAD" alt="NOMAD logo"></a>
+                    <a target="_blank" href="https://nomadsheffield.co.uk" onclick="captureOutboundLink('https://nomadsheffield.co.uk'); return false;"><img src="assets/img/Nomad-Sheffield-Logo-768x326.jpg" title="NOMAD" alt="NOMAD logo"></a>
                     <div class="category">Housing Advice</div>
                 </div>
             </div>
             <div class="grid-item housing">
                 <div class="item-content">
-                    <a target="_blank" href="https://www.waythrough.org.uk/find-support-near-me/the-greens-sheffield-recovery-focused-accommodation/"><img src="assets/img/WayThrough_Logo.webp" title="Waythrough (Sheffield Recovery Focused Accommodation)" alt="Waythrough logo">
+                    <a target="_blank" href="https://www.waythrough.org.uk/find-support-near-me/the-greens-sheffield-recovery-focused-accommodation/" onclick="captureOutboundLink('https://www.waythrough.org.uk/find-support-near-me/the-greens-sheffield-recovery-focused-accommodation/'); return false;"><img src="assets/img/WayThrough_Logo.webp" title="Waythrough (Sheffield Recovery Focused Accommodation)" alt="Waythrough logo">
                         <h5>Sheffield Recovery Focused Accommodation</h5></a>
                     <div class="category">Housing Advice</div>
                 </div>
             </div>
             <div class="grid-item housing">
                 <div class="item-content">
-                    <a target="_blank" href="https://www.sheffield.gov.uk/council-housing"><img src="assets/img/scc_logo.svg" title="Sheffield City Council" alt="Sheffield City Council logo"></a>
+                    <a target="_blank" href="https://www.sheffield.gov.uk/council-housing" onclick="captureOutboundLink('https://www.sheffield.gov.uk/council-housing'); return false;"><img src="assets/img/scc_logo.svg" title="Sheffield City Council" alt="Sheffield City Council logo"></a>
                     <div class="category">Housing Advice</div>
                 </div>
             </div>
             <div class="grid-item housing">
                 <div class="item-content">
-                    <a target="_blank" href="https://www.roundabouthomeless.org/"><img src="assets/img/Roundabout_Homeless_Charity.png" title="Roundabout" alt="Roundabout logo"></a>
+                    <a target="_blank" href="https://www.roundabouthomeless.org/" onclick="captureOutboundLink('https://www.roundabouthomeless.org/'); return false;"><img src="assets/img/Roundabout_Homeless_Charity.png" title="Roundabout" alt="Roundabout logo"></a>
                     <div class="category">Housing Advice</div>
                 </div>
             </div>
             <div class="grid-item housing">
                 <div class="item-content">
-                    <a target="_blank" href="https://www.guinnesspartnership.com"><img src="assets/img/gp-logo.jpg" title="Guinness Partnership" alt="Guinness Partnership logo"></a>
+                    <a target="_blank" href="https://www.guinnesspartnership.com" onclick="captureOutboundLink('https://www.guinnesspartnership.com'); return false;"><img src="assets/img/gp-logo.jpg" title="Guinness Partnership" alt="Guinness Partnership logo"></a>
                     <div class="category">Housing Advice</div>
                 </div>
             </div>
             <div class="grid-item housing">
                 <div class="item-content">
-                    <a target="_blank" href="https://www.sheffieldpropertyshop.org.uk"><img src="assets/img/SheffieldPropertyShopLogo.png" title="Sheffield Property Shop" alt="Sheffield Property Shop logo"></a>
+                    <a target="_blank" href="https://www.sheffieldpropertyshop.org.uk" onclick="captureOutboundLink('https://www.sheffieldpropertyshop.org.uk'); return false;"><img src="assets/img/SheffieldPropertyShopLogo.png" title="Sheffield Property Shop" alt="Sheffield Property Shop logo"></a>
                     <div class="category">Housing Advice</div>
                 </div>
             </div>
             <div class="grid-item health">
                 <div class="item-content">
-                    <a target="_blank" href="https://www.shipshape.org.uk/"><img src="assets/img/SS%20Logo.webp" title="ShipShape" alt="ShipShape logo"></a>
+                    <a target="_blank" href="https://www.shipshape.org.uk/" onclick="captureOutboundLink('https://www.shipshape.org.uk'); return false;"><img src="assets/img/SS%20Logo.webp" title="ShipShape" alt="ShipShape logo"></a>
                     <div class="category">Health &amp; Wellbeing</div>
                 </div>
             </div>
             <div class="grid-item health">
                 <div class="item-content">
-                    <a target="_blank" href="https://humankindcharity.org.uk/service/likewise"><img src="assets/img/likewise_logo.png" title="LikeWise" alt="LikeWise logo"></a>
+                    <a target="_blank" href="https://humankindcharity.org.uk/service/likewise" onclick="captureOutboundLink('https://humankindcharity.org.uk/service/likewise'); return false;"><img src="assets/img/likewise_logo.png" title="LikeWise" alt="LikeWise logo"></a>
                     <div class="category">Health &amp; Wellbeing</div>
                 </div>
             </div>
             <div class="grid-item health">
                 <div class="item-content">
-                    <a target="_blank" href="https://www.wearewithyou.org.uk"><img src="assets/img/withyou-brand-logo-blue.svg" title="withyou" alt="withyou logo"></a>
+                    <a target="_blank" href="https://www.wearewithyou.org.uk" onclick="captureOutboundLink('https://www.wearewithyou.org.uk'); return false;"><img src="assets/img/withyou-brand-logo-blue.svg" title="withyou" alt="withyou logo"></a>
                     <div class="category">Health &amp; Wellbeing</div>
                 </div>
             </div>
             <div class="grid-item health">
                 <div class="item-content">
-                    <a target="_blank" href="https://sheffieldflourish.co.uk/"><img src="assets/img/flourish-logo-black.png" title="Sheffield Flourish" alt="Sheffield Flourish logo"></a>
+                    <a target="_blank" href="https://sheffieldflourish.co.uk/" onclick="captureOutboundLink('https://sheffieldflourish.co.uk'); return false;"><img src="assets/img/flourish-logo-black.png" title="Sheffield Flourish" alt="Sheffield Flourish logo"></a>
                     <div class="category">Health &amp; Wellbeing</div>
                 </div>
             </div>
             <div class="grid-item health">
                 <div class="item-content">
-                    <a target="_blank" href="https://www.sheffieldmentalhealth.co.uk"><img src="assets/img/smhg-logo.png" title="Sheffield Mental Health Guide" alt="Sheffield Mental Health Guide logo"></a>
+                    <a target="_blank" href="https://www.sheffieldmentalhealth.co.uk" onclick="captureOutboundLink('https://www.sheffieldmentalhealth.co.uk'); return false;"><img src="assets/img/smhg-logo.png" title="Sheffield Mental Health Guide" alt="Sheffield Mental Health Guide logo"></a>
                     <div class="category">Health &amp; Wellbeing</div>
                 </div>
             </div>
             <div class="grid-item health">
                 <div class="item-content">
-                    <a target="_blank" href="https://andysmanclub.co.uk/find-your-nearest-group/"><img src="assets/img/amc-logo-export.png" title="Andy's Man Club" alt="Andy's Man Club logo"></a>
+                    <a target="_blank" href="https://andysmanclub.co.uk/find-your-nearest-group/" onclick="captureOutboundLink('https://andysmanclub.co.uk/find-your-nearest-group'); return false;"><img src="assets/img/amc-logo-export.png" title="Andy's Man Club" alt="Andy's Man Club logo"></a>
                     <div class="category">Health &amp; Wellbeing</div>
                 </div>
             </div>
             <div class="grid-item phones">
                 <div class="item-content">
-                    <a target="_blank" href="https://www.moneysupermarket.com/mobile-phones/sim-only/pay-as-you-go-sim/"><img src="assets/img/msm-1-white.svg" title="Money SuperMarket" alt="Money SuperMarket logo"></a>
+                    <a target="_blank" href="https://www.moneysupermarket.com/mobile-phones/sim-only/pay-as-you-go-sim/" onclick="captureOutboundLink('https://www.moneysupermarket.com/mobile-phones/sim-only/pay-as-you-go-sim'); return false;"><img src="assets/img/msm-1-white.svg" title="Money SuperMarket" alt="Money SuperMarket logo"></a>
                     <div class="category">Mobile Phones</div>
                 </div>
             </div>
             <div class="grid-item phones">
                 <div class="item-content">
-                    <a target="_blank" href="https://www.giffgaff.com"><img src="assets/img/giffgaff-logo-white.svg" title="giff gaff" alt="giff gaff logo"></a>
+                    <a target="_blank" href="https://www.giffgaff.com" onclick="captureOutboundLink('https://www.giffgaff.com'); return false;"><img src="assets/img/giffgaff-logo-white.svg" title="giff gaff" alt="giff gaff logo"></a>
                     <div class="category">Mobile Phones</div>
                 </div>
             </div>
             <div class="grid-item phones">
                 <div class="item-content">
-                    <a target="_blank" href="https://www.tescomobile.com"><img src="assets/img/tescomobile-logo.svg" title="Tesco Mobile" alt="Tesco Mobile logo"></a>
+                    <a target="_blank" href="https://www.tescomobile.com" onclick="captureOutboundLink('https://www.tescomobile.com'); return false;"><img src="assets/img/tescomobile-logo.svg" title="Tesco Mobile" alt="Tesco Mobile logo"></a>
                     <div class="category">Mobile Phones</div>
                 </div>
             </div>
             <div class="grid-item phones">
                 <div class="item-content">
-                    <a target="_blank" href="https://www.moneysavingexpert.com/mobiles/best-pay-as-you-go-sim-cards/"><img src="assets/img/moneysavingexpert.png" title="Money Saving Expert" alt="Money Saving Expert logo"></a>
+                    <a target="_blank" href="https://www.moneysavingexpert.com/mobiles/best-pay-as-you-go-sim-cards/" onclick="captureOutboundLink('https://www.moneysavingexpert.com/mobiles/best-pay-as-you-go-sim-cards'); return false;"><img src="assets/img/moneysavingexpert.png" title="Money Saving Expert" alt="Money Saving Expert logo"></a>
                     <div class="category">Mobile Phones</div>
                 </div>
             </div>
 
             <div class="grid-item other">
                 <div class="item-content">
-                    <a target="_blank" href="https://project6.org.uk/sheffield"><img src="assets/img/project6.jpg" title="Project 6" alt="Project 6"></a>
+                    <a target="_blank" href="https://project6.org.uk/sheffield" onclick="captureOutboundLink('https://project6.org.uk/sheffield'); return false;"><img src="assets/img/project6.jpg" title="Project 6" alt="Project 6"></a>
                     <div class="category">Other Services</div>
                 </div>
             </div>
             <div class="grid-item other">
                 <div class="item-content">
-                    <a target="_blank" href="https://www.sheffield.gov.uk/public-health/get-help-with-domestic-abuse"><img src="assets/img/sheffield-dact.jpg" title="Sheffield Domestic Abuse Coordination Team (DACT)" alt="Sheffield DACT logo"></a>
+                    <a target="_blank" href="https://www.sheffield.gov.uk/public-health/get-help-with-domestic-abuse" onclick="captureOutboundLink('https://www.sheffield.gov.uk/public-health/get-help-with-domestic-abuse'); return false;"><img src="assets/img/sheffield-dact.jpg" title="Sheffield Domestic Abuse Coordination Team (DACT)" alt="Sheffield DACT logo"></a>
                     <div class="category">Other Services</div>
                 </div>
             </div>
             <div class="grid-item other">
                 <div class="item-content">
-                    <a target="_blank" href="https://sysurvivalguide.co.uk/"><img src="assets/img/SYSurvivalGuide_LogoOnly_RGB-150x150.png" title="South Yorkshire Survival Guide" alt="South Yorkshire Survival Guide logo"><h5>South Yorkshire Survival Guide</h5></a>
+                    <a target="_blank" href="https://sysurvivalguide.co.uk/" onclick="captureOutboundLink('https://sysurvivalguide.co.uk'); return false;"><img src="assets/img/SYSurvivalGuide_LogoOnly_RGB-150x150.png" title="South Yorkshire Survival Guide" alt="South Yorkshire Survival Guide logo"><h5>South Yorkshire Survival Guide</h5></a>
                     <div class="category">Other Services</div>
                 </div>
             </div>
             <div class="grid-item other">
                 <div class="item-content">
-                    <a href="https://www.helpushelpsheffield.uk/" target="_blank"><img src="assets/img/huhlogo.png" title="Help Us Help" alt="Help Us Help logo"></a>
+                    <a href="https://www.helpushelpsheffield.uk/" target="_blank" onclick="captureOutboundLink('https://www.helpushelpsheffield.uk'); return false;"><img src="assets/img/huhlogo.png" title="Help Us Help" alt="Help Us Help logo"></a>
                     <div class="category">Other Services</div>
                 </div>
             </div>
             <div class="grid-item social">
                 <div class="item-content">
-                    <a href="https://www.threads.com/" target="_blank"><img src="assets/img/threads-seeklogo.png" title="Threads" alt="Threads logo"></a>
+                    <a href="https://www.threads.com/" target="_blank" onclick="captureOutboundLink('https://www.threads.com'); return false;"><img src="assets/img/threads-seeklogo.png" title="Threads" alt="Threads logo"></a>
                     <div class="category">Social Media</div>
                 </div>
             </div>
             <div class="grid-item phones">
                 <div class="item-content">
-                    <a href="https://www.three.co.uk/" target="_blank"><img src="assets/img/three-logo.svg" title="Three" alt="Three logo"></a>
+                    <a href="https://www.three.co.uk/" target="_blank" onclick="captureOutboundLink('https://www.three.co.uk'); return false;"><img src="assets/img/three-logo.svg" title="Three" alt="Three logo"></a>
                     <div class="category">Mobile Phones</div>
                 </div>
             </div>
             <div class="grid-item phones">
                 <div class="item-content">
-                    <a href="https://www.vodafone.co.uk" target="_blank"><img src="assets/img/vodafone_logo.svg" title="Vodafone" alt="Vodafone logo"></a>
+                    <a href="https://www.vodafone.co.uk" target="_blank" onclick="captureOutboundLink('https://www.vodafone.co.uk'); return false;"><img src="assets/img/vodafone_logo.svg" title="Vodafone" alt="Vodafone logo"></a>
                     <div class="category">Mobile Phones</div>
                 </div>
             </div>
             <div class="grid-item phones">
                 <div class="item-content">
-                    <a href="https://ee.co.uk" target="_blank"><img src="assets/img/ee_logo.svg" title="EE" alt="EE logo"></a>
+                    <a href="https://ee.co.uk" target="_blank" onclick="captureOutboundLink('https://ee.co.uk'); return false;"><img src="assets/img/ee_logo.svg" title="EE" alt="EE logo"></a>
                     <div class="category">Mobile Phones</div>
                 </div>
             </div>
             <div class="grid-item phones">
                 <div class="item-content">
-                    <a href="https://o2.co.uk" target="_blank"><img src="assets/img/O2_Logo_White.svg" title="O2" alt="O2 logo"></a>
+                    <a href="https://o2.co.uk" target="_blank" onclick="captureOutboundLink('https://o2.co.uk'); return false;"><img src="assets/img/O2_Logo_White.svg" title="O2" alt="O2 logo"></a>
                     <div class="category">Mobile Phones</div>
                 </div>
             </div>
             <div class="grid-item other">
                 <div class="item-content">
-                    <a href="http://www.sheffieldfoodbank.org.uk/food-bank-list/" target="_blank">
+                    <a href="http://www.sheffieldfoodbank.org.uk/food-bank-list/" target="_blank" onclick="captureOutboundLink('http://www.sheffieldfoodbank.org.uk/food-bank-list'); return false;">
                         <img src="assets/img/food_poverty_network_logo.png" title="Food Poverty Network" alt="Food Poverty Network logo">
                         <h5>Food bank list</h5>
                     </a>
@@ -394,7 +410,7 @@
             </div>
             <div class="grid-item news">
                 <div class="item-content">
-                    <a href="https://www.bbc.co.uk/news/england/south_yorkshire" target="_blank">
+                    <a href="https://www.bbc.co.uk/news/england/south_yorkshire" target="_blank" onclick="captureOutboundLink('https://www.bbc.co.uk/news/england/south_yorkshire'); return false;">
                         <img src="assets/img/bbc_news_logo.png" title="BBC News South Yorkshire" alt="BBC Logo">
                         <h5>BBC News - South Yorkshire</h5>
                     </a>
@@ -403,7 +419,7 @@
             </div>
             <div class="grid-item news">
                 <div class="item-content">
-                    <a href="https://www.sheffieldtribune.co.uk/" target="_blank">
+                    <a href="https://www.sheffieldtribune.co.uk/" target="_blank" onclick="captureOutboundLink('https://www.sheffieldtribune.co.uk'); return false;">
                         <img src="assets/img/tribune-logo.png" title="Sheffield Tribune" alt="Sheffield Tribune logo">
                     </a>
                     <div class="category">News</div>
@@ -411,7 +427,7 @@
             </div>
             <div class="grid-item news">
                 <div class="item-content">
-                    <a href="https://nowthenmagazine.com/" target="_blank">
+                    <a href="https://nowthenmagazine.com/" target="_blank" onclick="captureOutboundLink('https://nowthenmagazine.com'); return false;">
                         <img src="assets/img/nowthen_logo.png" title="now then - A Magazine for Sheffield" alt="now then magazine logo">
                     </a>
                     <div class="category">News</div>
@@ -419,7 +435,7 @@
             </div>
             <div class="grid-item news">
                 <div class="item-content">
-                    <a href="https://issuu.com/themercurynewspaper/" target="_blank">
+                    <a href="https://issuu.com/themercurynewspaper/" target="_blank" onclick="captureOutboundLink('https://issuu.com/themercurynewspaper'); return false;">
                         <img src="assets/img/Mercury_logo.png" title="The North's leading Free Entertainment and Lifestyle Weekly Newspaper" alt="mercury logo">
                     </a>
                     <div class="category">News</div>
@@ -427,7 +443,7 @@
             </div>
             <div class="grid-item health">
                 <div class="item-content">
-                    <a href="https://sheffield.yorkshiresmokefree.nhs.uk/" target="_blank">
+                    <a href="https://sheffield.yorkshiresmokefree.nhs.uk/" target="_blank" onclick="captureOutboundLink('https://sheffield.yorkshiresmokefree.nhs.uk'); return false;">
                         <img src="assets/img/sheffield_smokefree_logo.jpg" title="Sheffield Smokefree" alt="Sheffield Smokefree logo">
                     </a>
                     <div class="category">Health &amp; Wellbeing</div>
@@ -437,7 +453,7 @@
             <!--
             <div class="grid-item other">
                 <div class="item-content">
-                    <a href="" target="_blank">
+                    <a href="" target="_blank" onclick="captureOutboundLink(''); return false;">
                         <img src="assets/img/" title="" alt="">
                         <h5></h5>
                     </a>
